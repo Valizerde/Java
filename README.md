@@ -16,7 +16,6 @@ public class Exemplo {
         cargo = JOptionPane.showInputDialog("Qual o seu cargo");
         matricula = Integer.parseInt( JOptionPane.showInputDialog("Qual sua matrícula") );
         salario = Double.parseDouble( JOptionPane.showInputDialog("Qual o seu salario") );
-       
-    }
-    
-}
+        
+        //Exibir os dados armazenados
+        JOptionPane.showMessageDialog(null, "Seu nome é " + nome + "\nSeu cargo é " + cargo + "\nSua matrícula é " + matricula + "\nVocê ganha " + String.valueOf(salario).replace(".", ",") + " reais");
